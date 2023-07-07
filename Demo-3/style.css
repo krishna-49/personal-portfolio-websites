@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--off-white);
+}
+
+:root {
+    --blue: #525FE1;
+    --orange: #F86F03;
+    --yellow: #FFA41B;
+    --off-white: #FFF6F4;
+    --gradient: linear-gradient(to right, #525FE1 0%, #FFA41B 100%, radial-gradiant(circle at top left, #525FE1, #FFA41B ))
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    font-size: 35px;
+    color: var(--blue);
+}
+
+.menu a {
+    letter-spacing: 1px;
+    margin-right: 1.5rem;
+    font-weight: 600;
+}
+
+.menu li a:hover,
+.links a:hover {
+    color: var(--blue) !important;
+}
+
+.links a {
+    color: black;
+    margin-right: 1rem;
+    font-size: larger;
+}
+
+.wrapper {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    opacity: 0.6;
+    background: linear-gradient(45deg, var(--orange), rgb(255, 199, 192));
+    animation: object1 6s linear infinite;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    left: 35%;
+    top: 20%;
+    opacity: 0.6;
+    background: linear-gradient(45deg, var(--orange), rgb(255, 199, 192));
+    animation: object2 6s linear infinite;
+}
+
+
+.cols0 {
+    z-index: 5;
+}
+
+.cols {
+    width: 50%;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: var(--blue);
+}
+
+.cols h1 {
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.multitext {
+    color: var(--orange);
+}
+
+.cols p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.buttons {
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+.buttons .btn1 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    background-color: black;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
+}
+
+.buttons .btn1:hover {
+    background-color: var(--yellow);
+    color: black;
+}
+
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox img {
+    position: relative;
+    height: 100%;
+    width: calc(90%);
+    top: -10px;
+    right: -45px;
+    animation: animateuser 4s linear infinite;
+}
+
+@keyframes animateuser {
+    50% {
+        right: -25px;
+        top: -20px;
+    }
+
+}
+
+.imgbox #splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    width: 90%;
+    animation: animate 4s linear infinite;
+    opacity: 0.2;
+}
+
+@keyframes animate {
+    50% {
+        top: 51%;
+        left: 51%;
+        width: 100%;
+    }
+
+}
+
+/* 4 About */
+.about_wrapper .single-logo-item {
+    width: 100%;
+    height: 6.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0.0625rem solid var(--blue);
+    box-shadow: none;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+}
+
+.about_wrapper .single-logo-item:hover {
+    border: 0.0625rem solid transparent;
+    box-shadow: 0 0.5rem 1.875rem rgb(118 85 225 / 15%);
+}
+
+.about_wrapper .client-info {
+    padding: 1.5625rem 1.875rem;
+    background: var(--bg-light);
+    position: relative;
+    margin-top: 1.5625rem;
+}
+
+.about_wrapper .client-info:before {
+    content: '';
+    position: absolute;
+    top: -1.5625rem;
+    left: -3.4375rem;
+    background: url('../images/client-info.webp');
+    background-repeat: no-repeat;
+    height: 10.9375rem;
+    width: 10.9375rem;
+}
+
+.client-info .large {
+    color: var(--orange);
+    font-size: 6.25rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 9;
+}
+
+.client-info .smll {
+    text-align: left;
+    color: var(--blue);
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+    font-weight: 500;
+}
+
+.call-now span {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.call-now p {
+    color: var(--yellow);
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+}
