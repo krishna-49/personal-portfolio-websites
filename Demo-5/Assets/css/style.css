@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --color-bg: #cfe2ff;
+    --color-bg-sidebar: #334b5c;
+    --color-bg-main: #dfedf3;
+    --color-text: #F6F4EB;
 }
 
 * {
@@ -13,12 +15,122 @@
     list-style-type: none;
 }
 
-/* sidebar */
+/* ------------------------sidebar ------------------------- */
 
-.sidebar{
+.sidebar {
     width: 280px;
+    background: var(--color-bg-sidebar);
+    color: var(--color-text);
 }
 
-.sidebar-brand{
+.sidebar-brand {
     height: 100px;
+}
+
+.brand-flex a {
+    color: #60b3dd;
+    font-weight: 900;
+}
+
+.brand-icons span {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.sidebar-user span {
+    font-size: 0.8rem;
+}
+
+.sidebar-menu {
+    margin-top: 3rem;
+}
+
+.menu-head {
+    font-size: 0.9rem;
+    color: #60b3dd;
+    font-weight: 500;
+}
+
+.sidebar-menu li a {
+    color: var(--color-text);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+
+
+/*----------------------- Main content--------------- */
+
+.main-content {
+    margin-left: 280px;
+}
+
+header {
+    height: 100px;
+}
+
+.menu-toggle label {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.menu-toggle label:hover {
+    background: var(--color-text);
+}
+
+main {
+    background: var(--color-bg-main);
+    min-height: calc(100vh - 70px);
+}
+
+.header-actions button {
+    outline: none;
+    color: var(--color-text);
+    background: #60b3dd;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.header-actions button span {
+    font-size: 1.3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.card-single {
+    background: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.card-flex {
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+.card-head span {
+    color: #555;
+}
+
+.card-chart span {
+    font-size: 5rem;
+}
+
+.card-chart.success span {
+    color: seagreen;
+}
+
+.card-chart.danger span {
+    color: rgb(228, 34, 0);
+}
+
+.card-chart.yellow span {
+    color: rgb(255, 137, 94);
 }

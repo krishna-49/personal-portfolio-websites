@@ -21,10 +21,10 @@
 <body>
 
     <!----------------------------- sidebar----------------------- -->
-    <div class="sidebar position-fixed h-100 top-0 start-0 p-3">
+    <div class="sidebar position-fixed h-100 top-0 start-0 py-3 px-4">
         <div class="sidebar-brand">
             <div class="brand-flex d-flex justify-content-between align-items-center ">
-                <a href="./index.html" class="text-decoration-none">Webtech</a>
+                <a href="./index.html" class="text-decoration-none text-uppercase fs-3">Webtech</a>
 
                 <div class="brand-icons">
                     <span class="las la-bell"></span>
@@ -33,63 +33,63 @@
             </div>
         </div>
         <div class="sidebar-main">
-            <div class="sidebar-user">
+            <div class="sidebar-user text-center py-4 mx-0">
                 <div>
-                    <h3>Adam Johnsan</h3>
+                    <h3 class="fs-4 fw-bolder ">Adam Johnsan</h3>
                     <span>adamjohnsan@gmail.com</span>
                 </div>
             </div>
             <div class="sidebar-menu">
-                <div class="menu-head">
+                <div class="menu-head text-uppercase mb-2">
                     <span>Dashboard</span>
                 </div>
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="las la-balance-scale"></span>
+                <ul class="ps-0 mb-4">
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-balance-scale fs-5 d-inline-block me-2"></span>
                             Finance
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <span class="las la-chart-pie"></span>
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-chart-pie fs-5 d-inline-block me-2"></span>
                             Analytics
                         </a>
                     </li>
                 </ul>
 
 
-                <div class="menu-head">
+                <div class="menu-head text-uppercase mb-2">
                     <span>Applications</span>
                 </div>
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="las la-calendar"></span>
+                <ul class="ps-0 mb-4">
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-calendar fs-5 d-inline-block me-2"></span>
                             Calendar
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <span class="las la-users"></span>
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-users fs-5 d-inline-block me-2"></span>
                             Contacts
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <span class="las la-shopping-cart"></span>
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-shopping-cart fs-5 d-inline-block me-2"></span>
                             Ecommerce
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <span class="las la-envelope"></span>
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-envelope fs-5 d-inline-block me-2"></span>
                             Mailbox
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <span class="las la-check-circle"></span>
+                    <li class="mb-3 ">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="las la-check-circle fs-5 d-inline-block me-2"></span>
                             Tasks
                         </a>
                     </li>
@@ -105,31 +105,156 @@
     <!----------------------------- main content----------------------- -->
 
     <div class="main-content">
-        <header>
-            <span class="bars"></span>
+        <header class="d-flex justify-content-between align-items-center py-3 px-4">
+            <div class="menu-toggle">
+                <label for="" class="d-flex justify-content-center align-items-center ">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
 
-            <div>
-                <span class="las la-search"></span>
-                <span class="las la-bookmark"></span>
-                <span class="las la-sms"></span>
+            <div class="header-icons">
+                <span class="las la-search d-inline-block ms-2 fs-4"></span>
+                <span class="las la-bookmark d-inline-block ms-2 fs-4"></span>
+                <span class="las la-sms d-inline-block ms-2 fs-4"></span>
             </div>
         </header>
 
-        <main>
-            <div class="page-header">
+        <main class="p-4">
+            <div class="page-header d-flex justify-content-between">
                 <div>
                     <h1>Analytics Dashboard</h1>
                     <small>Monitor key metrics. Check reporting and review insights.</small>
                 </div>
-                <div>
-                    <button>
+                <div class="header-actions">
+                    <button class="px-3 py-2 ms-3 ">
                         <span class="las la-file-export"></span>
                         Export
                     </button>
-                    <button>
+                    <button class="px-3 py-2 ms-3">
                         <span class="las la-tools"></span>
                         Settings
                     </button>
+                </div>
+            </div>
+
+            <div class="cards mt-5">
+                <div class="card-single p-3">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span class="d-block text-uppercase fs-6">Purchases</span>
+                                <small class="fw-bold">Number of Purchases</small>
+                            </div>  
+                            <h2 class="fs-2 text-dark ">18,542</h2>
+                            <small>2% less Purchase</small>
+                        </div>
+                        <div class="card-chart danger">
+                            <span class="las la-chart-line "> </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-single p-3">
+                    <div class="card-flex align-items-center ">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span class="d-block text-uppercase fs-6">Refunds</span>
+                                <small class="fw-bold">Value of refunded orders</small>
+                            </div>  
+                            <h2 class="fs-2 text-dark ">$5.125.11</h2>
+                            <small>10% less Refund</small>
+                        </div>
+                        <div class="card-chart success">
+                            <span class="las la-chart-line "></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-single p-3">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span class="d-block text-uppercase fs-6">Unique Visitors</span>
+                                <small class="fw-bold">Number of Visitors</small>
+                            </div>  
+                            <h2 class="fs-2 text-dark ">42,065</h2>
+                            <small>2% less Visitors</small>
+                        </div>
+                        <div class="card-chart yellow">
+                            <span class="las la-chart-line "></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="job-grid">
+                <div class="analytics-card">
+                    <div class="analytics-head">
+                        <h2>Actions Needed</h2>
+                    </div>
+                </div>
+
+                <div class="jobs">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="indicator"></span>
+                                </td>
+                                <td>Customer experience designer</td>
+                                <td>Design</td>
+                                <td>Montana Lk.</td>
+                                <td>Posted 6 days ago</td>
+                                <td>
+                                    <button>8 applicants</button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <span class="indicator"></span>
+                                </td>
+                                <td>Software Developer</td>
+                                <td>Developer</td>
+                                <td>Montana Lk.</td>
+                                <td>Posted 6 days ago</td>
+                                <td>
+                                    <button>8 applicants</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <span class="indicator"></span>
+                                </td>
+                                <td>Customer experience designer</td>
+                                <td>Design</td>
+                                <td>Montana Lk.</td>
+                                <td>Posted 6 days ago</td>
+                                <td>
+                                    <button>8 applicants</button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <span class="indicator"></span>
+                                </td>
+                                <td>Software Developer</td>
+                                <td>Developer</td>
+                                <td>Montana Lk.</td>
+                                <td>Posted 6 days ago</td>
+                                <td>
+                                    <button>8 applicants</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
