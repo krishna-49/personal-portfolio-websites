@@ -134,3 +134,75 @@ main {
 .card-chart.yellow span {
     color: rgb(255, 137, 94);
 }
+
+.jobs-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-gap: 3rem;
+}
+
+.analytics-card {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.analytics-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.analytics-head span {
+    font-size: 1.5rem;
+}
+
+.analytics-chart small{
+    font-weight: -600;
+    color: #555;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.chart-circle{
+    height: 150px;
+    width: 150px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #60b3dd;
+    border-bottom: 10px solid #60b3dd;
+    border-top: 10px solid #60b3dd;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.analytics-card button{
+    display: block;
+    padding: .6rem 1rem;
+    width: 100%;
+    height: 45px;
+    background: #60b3dd;
+    color: #fff;
+    border: 1px solid #60b3dd;
+    border-radius: 3px;
+}
+
+.jobs h3 small{
+    color: #60b3dd;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.jobs table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.jobs table tr{
+    background: #fff;
+}
