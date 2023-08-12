@@ -158,14 +158,14 @@ main {
     font-size: 1.5rem;
 }
 
-.analytics-chart small{
+.analytics-chart small {
     font-weight: -600;
     color: #555;
     margin-bottom: 1rem;
     display: block;
 }
 
-.chart-circle{
+.chart-circle {
     height: 150px;
     width: 150px;
     border-left: 10px solid transparent;
@@ -179,7 +179,7 @@ main {
     margin-bottom: 3rem;
 }
 
-.analytics-card button{
+.analytics-card button {
     display: block;
     padding: .6rem 1rem;
     width: 100%;
@@ -190,7 +190,7 @@ main {
     border-radius: 3px;
 }
 
-.jobs h3 small{
+.jobs h3 small {
     color: #60b3dd;
     font-weight: 600;
     font-size: 1rem;
@@ -198,11 +198,34 @@ main {
     margin-left: 1rem;
 }
 
-.jobs table{
+.jobs table {
     border-collapse: collapse;
-    width: 100%;
+    margin-top: 1rem;
 }
 
-.jobs table tr{
+span.indicator {
+    background: #334b5c;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+span.indicator.even {
+    background: #80a5c0;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+
+.jobs table td div {
     background: #fff;
+    margin-bottom: 0.8rem;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #444;
+    font-weight: 500;
 }
