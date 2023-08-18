@@ -56,6 +56,7 @@ body {
 #sidebar.hide {
 	width: 60px;
 }
+
 /* 
 #sidebar.hide ~.text{
 	display: none;
@@ -72,7 +73,7 @@ body {
 	box-sizing: content-box;
 }
 
-#sidebar .brand .bx{
+#sidebar .brand .bx {
 	min-width: 60px;
 }
 
@@ -267,12 +268,23 @@ body {
 	border-radius: 50%;
 	transition: all .3s ease;
 }
+
 #content nav #switch-mode:checked+.switch-mode::before {
 	left: calc(100% - (25px - 4px) - 2px);
 }
 
-.admin-img{
+.admin-img {
 	border-radius: 50%;
+}
+
+.admin-data .admin-table button:hover {
+	color: var(--blue);
+	background-color: #f1f1f1;
+
+}
+.admin-data .admin-table ul li a:hover {
+	color: var(--blue) !important;
+	background-color: #f1f1f1;
 }
 
 /* exit navbar */
