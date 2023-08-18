@@ -271,6 +271,10 @@ body {
 	left: calc(100% - (25px - 4px) - 2px);
 }
 
+.admin-img{
+	border-radius: 50%;
+}
+
 /* exit navbar */
 
 /* ---exit content---- */
