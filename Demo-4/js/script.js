@@ -71,3 +71,10 @@ switchMode.addEventListener('change', function () {
 		document.body.classList.remove('dark');
 	}
 })
+
+
+// add date
+
+$('#datepicker').datepicker({
+	uiLibrary: 'bootstrap'
+});
