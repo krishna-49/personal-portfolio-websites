@@ -73,8 +73,3 @@ switchMode.addEventListener('change', function () {
 })
 
 
-// add date
-
-$('#datepicker').datepicker({
-	uiLibrary: 'bootstrap'
-});
